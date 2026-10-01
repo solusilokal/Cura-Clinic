@@ -37,6 +37,7 @@ const pageData = {
   description: "Klinik Dokter Umum dengan pelayanan profesional, ramah, dan fasilitas modern. Kami berkomitmen memberikan penanganan medis terbaik untuk Anda dan keluarga.",
   profileImg: "./cura_clinic_logo.png", 
   heroImg: "./cura_clinic_hero.jpg",
+  seoImg: "./og-image.png",
   links: {
     instagram: "https://www.instagram.com/solusilokal.id",
     maps: "https://www.google.com/maps/search/Palangka+Raya/", 
@@ -596,10 +597,12 @@ export default function App() {
               </button>
             </div>
 
-            <div className="bg-slate-50 border border-slate-200 rounded-[24px] p-6 flex flex-col items-center justify-center mb-6 shadow-sm">
-              <img src={pageData.profileImg} alt="Profile" className="w-[64px] h-[64px] rounded-full border-2 border-white shadow-md mb-3 object-contain p-1 bg-white" />
+            <div className="bg-slate-50 border border-slate-200 rounded-[24px] p-4 flex flex-col items-center justify-center mb-6 shadow-sm overflow-hidden">
+              <div className="w-full h-36 rounded-2xl overflow-hidden mb-3 border border-slate-200 shadow-sm relative bg-slate-900">
+                <img src={pageData.seoImg} alt="Preview Banner" className="w-full h-full object-cover object-top" />
+              </div>
               <h4 className="text-slate-900 font-bold text-base text-center tracking-tight">Klinik Kesehatan Anda</h4>
-              <p className="text-slate-500 text-xs mt-1 text-center font-medium max-w-[80%]">{pageData.title}</p>
+              <p className="text-slate-500 text-xs mt-1 text-center font-medium max-w-[85%]">{pageData.title}</p>
             </div>
 
             <div className="flex justify-center gap-4 pb-2">
